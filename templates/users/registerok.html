@@ -1,0 +1,16 @@
+{% extends "users/base.html" %}
+{% block title %} Simple Ecommerce - Registro completado{% endblock %}
+{%block content%}
+
+<main role="main" class="container">
+    <div class="starter-template">
+        <h1> Tu usuario fue creado con exito</h1>
+        <p class="lead">Si la pagina no es redirigida en 5 segundos pulsa <a href="{% url 'users:login'%}">Aqui</a> </p>
+    </div>
+</main>
+<script>
+    setTimeout(function(){
+    windows.locations.replace("{% url 'users:login'%}");
+    }, 5000);
+</script>
+{% endblock %}
