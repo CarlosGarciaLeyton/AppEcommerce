@@ -10,7 +10,9 @@
 </main>
 <script>
     setTimeout(function(){
-    windows.locations.replace("{% url 'users:login'%}");
+    window.location.replace("{% url 'users:login'%}");
     }, 5000);
+
+   
 </script>
 {% endblock %}
