@@ -1,0 +1,5 @@
+#Archivos de copia de seguridad de texto
+.*bak
+
+#Database
+*.sqlite3
